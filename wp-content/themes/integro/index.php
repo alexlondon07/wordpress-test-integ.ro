@@ -3,32 +3,42 @@
     <h1 class="page-heading max-width"> <?php bloginfo(name); ?></h1>
     <div class="grid max-width">
             <div class="block grid--item-9">
-                 <div class="block__title">
+                <div class="block__title">
                     Últimos trabajos
                 </div>
                  <div class="block__body grid">
                     <p>Integ.ro una organización especializada en diseñar, estructurar y desarrollar soluciones integrales de tecnología web.</p>
-                    <?php 
-                        if( have_posts()){
-                            while(have_posts()){
+                    <?php
+                        if(have_posts()) :
+                            while(have_posts()) :
                                 the_post();
-                                ?>
+                    ?>
                                 <article class="block grid--item-4">
                                     <h2 class="block__title"><?php the_title(); ?><h2>
                                     <div class="block__body">
                                         <!-- Informacion de cada post-->
                                         <p><?php the_excerpt(); ?></p>
-
-                                        <!-- tags de nuetros post-->
-                                        <footer><small><?php the_tags(); ?></small></footer>
+                                        <footer>
+                                            <div>
+                                            <small><?php the_tags(); ?></small>
+                                            </div>
+                                            <div>
+                                            <b><?php the_author(); ?></b>
+                                            </div>
+                                                <small><a href="<?php the_permalink(); ?>">Leer Más</a></small>
+                                        </footer>
                                     </div>
                                 </article>
-                                <?php
-                            }
-                        }
+                    <?php 
+                        endwhile;
+                        else:
                     ?>
+                        <h4>Sin resultados</h4>
+                    <?php
+                        endif
+                    ?>   
                 </div>
             </div>
             <?php  get_sidebar(); ?>
-        </div>
-        <?php  get_footer(); ?>
+    </div>
+    <?php  get_footer();
