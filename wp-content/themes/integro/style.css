@@ -125,12 +125,17 @@ h6, .h6 {
 }
 
 .page-heading {
-  border-left: 5px solid #2d72d9;
+  border-left: 5px solid #ff6a00;
   padding-left: 12px;
   padding-top: 12px;
   padding-bottom: 12px;
   margin-top: 5px;
-  color:#2d72d9;
+  color:#fff;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff8c35+0,ffffff+100&1+0,0+100 */
+background: -moz-linear-gradient(left, rgba(255,140,53,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,140,53,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,140,53,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8c35', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
 }
 
 .page-heading span {
@@ -1096,7 +1101,10 @@ body {
   background-color: white;
   position: relative;
 }
-
+.block__body2 {
+  padding: 24px;
+  position: relative;
+}
 .block-bg {
   max-width: 50%;
   display: block;
@@ -1260,4 +1268,7 @@ nav {
 }
 .nav__list li a:visited {
   color: white;
+}
+.back-gris {
+  background: #f4f4f4;
 }

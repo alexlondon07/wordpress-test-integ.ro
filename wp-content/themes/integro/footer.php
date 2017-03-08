@@ -1,10 +1,7 @@
 <footer class="max-width">
     <div class="block max-width">
-        <div class="block__title">
-            Footer
-        </div>
         <div class="block__body">
-            <small>Esta fue una entrada de integ.ro</small>
+            <small> <p class="pull-right">Copyright © / Design by   <a href="https://alexlondon07.github.io/" rel="nofollow">Alexander Londoño Espejo</a></p></small>
         </div>
     </div>
 </footer>

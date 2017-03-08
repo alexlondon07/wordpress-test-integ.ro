@@ -12,7 +12,7 @@
                             while(have_posts()) :
                                 the_post();
                     ?>
-                                <article class="block grid--item-4">
+                                <article class="block grid--item-4 back-gris">
                                     <h2 class="block__subtitle"><?php the_title(); ?><h2>
 								<?php 
 									if ( has_post_thumbnail()) { ?>
@@ -23,7 +23,7 @@
 									<?php
 									}
 								?>
-                                    <div class="block__body">
+                                    <div class="block__body2">
                                         <!-- Informacion de cada post-->
                                         <p><?php the_excerpt(); ?></p>
                                         <footer>
@@ -52,9 +52,6 @@
     
     <div class="max-width">
      <div class="block max-width">
-        <div class="block__title">
-            Dejame tu comentario.
-        </div>
         <div class="block__body">
             <!-- Div de disqus -->
             <div id="disqus_thread"></div>
