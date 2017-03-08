@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<body>
     <h1 class="page-heading max-width"> <?php bloginfo(name); ?></h1>
     <div class="grid max-width">
             <div class="block grid--item-9">
@@ -14,7 +13,7 @@
                                 the_post();
                     ?>
                                 <article class="block grid--item-4">
-                                    <h2 class="block__title"><?php the_title(); ?><h2>
+                                    <h2 class="block__subtitle"><?php the_title(); ?><h2>
 								<?php 
 									if ( has_post_thumbnail()) { ?>
 										<picture>
@@ -50,4 +49,17 @@
             </div>
             <?php  get_sidebar(); ?>
     </div>
+    
+    <div class="max-width">
+     <div class="block max-width">
+        <div class="block__title">
+            Dejame tu comentario.
+        </div>
+        <div class="block__body">
+            <!-- Div de disqus -->
+            <div id="disqus_thread"></div>
+            <!-- Fin Div de disqus -->
+        </div>
+    </div>
+<div>
     <?php  get_footer();

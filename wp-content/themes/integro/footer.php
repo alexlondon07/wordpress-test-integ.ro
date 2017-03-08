@@ -8,6 +8,13 @@
         </div>
     </div>
 </footer>
+
+
+<!-- script de js de disqus, Comentarios -->
+<script type="text/javascript" src="js/disqus.js"></script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+<!-- Fin script de js de disqus, Comentarios -->
+
 <?php wp_footer(); ?>
 </body>
 </html>
